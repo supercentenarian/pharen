@@ -3894,6 +3894,7 @@ class Parser{
 
         self::$special_forms = array(
             "fn" => array("FuncDefNode", "LeafNode", "LeafNode", "LiteralNode", self::$values),
+            "defun" => array("FuncDefNode", "LeafNode", "LeafNode", "LiteralNode", self::$values),
             "lambda" => array("LambdaNode", "LeafNode", "LiteralNode", self::$values),
             "fun" => array("ExpandableFuncNode", "LeafNode", self::$ann_or_name, "LiteralNode", self::$values),
             "ann" => array("GradualTypingNode", "LeafNode", "VariableNode", "LiteralNode", self::$values), 
